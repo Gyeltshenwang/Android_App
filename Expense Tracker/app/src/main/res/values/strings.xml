@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">validation</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Change Password</string>
+    <string name="mode">Dark Mode</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="row1">Balance</string>
+    <string name="col1">Initial Amount:</string>
+    <string name="col2">Expense Amount</string>
+    <string name="row2">Current Balance:</string>
+    <string name="but1">Add Amount</string>
+    <string name="but2">Track your expense</string>
+    <string name="col3">Expense:</string>
+    <string name="a1">Initial Amount:</string>
+    <string name="a2">Date:</string>
+    <string name="s">Save</string>
+    <string name="a3">Expense:</string>
+    <string name="a4">Category:</string>
+    <string name="sign_up">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="login">login</string>
+
+
+    <string-array name="category">
+
+        <item>Food</item>
+        <item>Shoes</item>
+        <item>Clothes</item>
+        <item>Stationery</item>
+        <item>Make_up</item>
+        <item>Others</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="nine">9</string>
+    <string name="_eight">8</string>
+    <string name="_seven">7</string>
+    <string name="_six">6</string>
+    <string name="_five">5</string>
+    <string name="_four">4</string>
+    <string name="_three">3</string>
+    <string name="_two">2</string>
+    <string name="_one">1</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="mul">*</string>
+    <string name="dot">.</string>
+    <string name="zero">0</string>
+    <string name="cons">C</string>
+    <string name="div">/</string>
+    <string name="ans">=</string>
+    <string name="title_activity_navigatiion__drawer">Navigatiion_Drawer</string>
+    <string name="title_activity_navigatiion_drawer">Navigatiion_Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="expense_details">Expense Details</string>
+    <string name="register">Register</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="registration">Registration</string>
+    <string name="resetPassword">Enter new password</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="reset">Change Password</string>
+</resources>

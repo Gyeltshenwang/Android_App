@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_container"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:background="@drawable/expense_shape"
+        android:elevation="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Name"
+        app:layout_constraintVertical_bias="0.673">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/logo_save"
+            app:layout_constraintBottom_toTopOf="@+id/btn_AddExpense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.214" />
+
+        <Button
+            android:id="@+id/btn_AddExpense"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/background"
+            android:text="@string/but2"
+            android:textSize="18dp"
+            app:backgroundTint="@color/back"
+            app:icon="@drawable/ic_expanse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="100dp"
+            android:layout_height="17dp"
+            android:background="@color/back"
+            android:layout_marginStart="189dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="80dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/back"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="45dp"
+            android:layout_height="17dp"
+            android:background="@color/back"
+            android:layout_marginTop="31dp"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="60dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="31dp"
+            android:background="@color/back"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="40dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp"
+            android:layout_marginBottom="51dp"
+            android:background="@color/back"
+            app:layout_constraintBottom_toTopOf="@+id/btn_AddExpense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Profile_Image"
+        android:layout_width="98dp"
+        android:layout_height="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bitter"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profile_Image" />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Name"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

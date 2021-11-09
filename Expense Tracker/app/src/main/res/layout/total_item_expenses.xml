@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:stretchColumns="1,2,3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/cell_shape"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Date"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="85dp"
+                android:layout_column="2"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:fontFamily="casual"
+                android:text="Category"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:id="@+id/Expense"
+                android:layout_column="3"
+                android:background="@drawable/cell_shape"
+                android:fontFamily="casual"
+                android:text="Expense"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+
+
+
+</TableLayout>

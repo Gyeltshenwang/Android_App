@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/dash_board"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-0.2dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/user"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="479dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/edit_text"
+                android:elevation="34dp"
+                android:fontFamily="@font/bitter"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/password"
+                android:fontFamily="@font/bitter"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background"
+            android:elevation="9dp"
+            android:fontFamily="@font/bitter"
+            android:onClick="logIn"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/back" />
+
+        <TextView
+
+            android:id="@+id/txtForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/bitter"
+            android:gravity="center"
+            android:onClick="forgot"
+            android:textSize="15sp"
+            android:text="@string/forgot_password" />
+
+        <TextView
+            android:id="@+id/txtSinUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/bitter"
+            android:gravity="center"
+            android:onClick="signUp"
+            android:text="@string/sign_up"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

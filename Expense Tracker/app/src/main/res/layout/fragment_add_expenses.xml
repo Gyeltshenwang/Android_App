@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addExpanse_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/orange"
+    tools:context=".ui.home.AddExpenses">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="403dp"
+        android:layout_height="589dp"
+        android:background="@drawable/viewpager"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:padding="8dp"
+           >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="2dp"
+                android:layout_height="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="20dp"
+                android:background="@drawable/edit_text"
+                android:elevation="10sp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:text="Amount"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/mInitial"
+                    android:layout_width="36dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="20dp"
+                android:elevation="10sp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:text="Expense"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/number2"
+                    android:layout_width="37dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="20dp"
+                android:elevation="10sp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:text="Category"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spin_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="42dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="20dp"
+                android:elevation="10sp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="30sp">
+
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:hint="Date"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="39dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/blue"
+            android:text="@string/s"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

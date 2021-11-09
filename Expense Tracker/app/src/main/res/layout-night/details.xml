@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    android:elevation="45dp"
+    android:id="@+id/details">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:elevation="35dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Expense (Nu): "
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount (Nu):"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category:"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance (Nu): "
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:elevation="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvExpenses"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amount"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/bitter"
+            android:text="hello"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="hello"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="hello"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

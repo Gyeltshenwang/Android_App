@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abhaya_libre</item>
+        <item>@font/aladin</item>
+        <item>@font/alegreya_sc</item>
+        <item>@font/almendra</item>
+        <item>@font/amaranth</item>
+        <item>@font/amethysta</item>
+        <item>@font/andika</item>
+        <item>@font/averia_gruesa_libre</item>
+        <item>@font/bitter</item>
+        <item>@font/carrois_gothic_sc</item>
+        <item>@font/della_respira</item>
+    </array>
+</resources>
